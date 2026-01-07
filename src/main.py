@@ -9,6 +9,7 @@ from src.parser import parse_timetable
 from src.matcher import get_pending_notifications
 from src.formatter import format_notification
 from src.sender import send_telegram_message
+from src.discord_sender import send_discord_message
 
 # Configure logging
 logging.basicConfig(
@@ -79,10 +80,17 @@ def main():
         message = format_notification(notification)
         logger.info(f"Sending notification for: {notification.class_slot.class_name}")
         
+        # Send to Telegram
         if send_telegram_message(message):
             success_count += 1
         else:
-            logger.warning(f"Failed to send notification for: {notification.class_slot.class_name}")
+            logger.warning(f"Failed to send Telegram notification for: {notification.class_slot.class_name}")
+        
+        # Send to Discord
+        if send_discord_message(message):
+            logger.info(f"Discord notification sent for: {notification.class_slot.class_name}")
+        else:
+            logger.warning(f"Failed to send Discord notification for: {notification.class_slot.class_name}")
     
     logger.info(f"Sent {success_count}/{len(pending)} notifications successfully")
     
