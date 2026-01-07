@@ -1,0 +1,12 @@
+Day,8:00 - 8:50,9:00 - 9:50,10:00 - 10:50,11:00 - 11:50,12:00 - 12:50,1:00 - 1:50
+MONDAY,"IIoT & Cloud (H17, A)","Deep Learning (H15, F)","HCI (H14, D)","Net System Design (H17, B)","Wireless Nets (H15, G)",LUNCH
+TUESDAY,"Net System Design (H17, B)","Wireless Nets (H15, G)",Professional Communication (H17/L507),"Multimedia Proc (H14, C)","IIoT & Cloud (H17, A)",LUNCH
+WEDNESDAY,"Multimedia Proc (H14, C)",Free,"Deep Learning (H15, F)",Free,"Net System Design (H17, B)",LUNCH
+THURSDAY,Free,"Net System Design (H17, B)","Wireless Nets (H15, G)","HCI (H14, D)","Multimedia Proc (H14, C)",LUNCH
+FRIDAY,Free,"Multimedia Proc (H14, C)","IIoT & Cloud (H17, A)","Deep Learning (H15, F)","HCI (H14, D)",LUNCH
+Day,2:00 - 2:50,3:00 - 3:50,4:00 - 4:50,5:00 - 5:50
+MONDAY,Free,Free,Free,Free
+TUESDAY,Professional Communication (H17/L507),Free,Free,"HCI (H14, D)"
+WEDNESDAY,Free,Free,"Deep Learning (Lab, L509, J3/X3)",Free
+THURSDAY,DS3001 Proto & Testing (L607/608/609),Free,Free,"Wireless Nets (Tut, H14, X4)"
+FRIDAY,"IIoT & Cloud (H17, A)",Free,"HCI (H14, D)",Free
