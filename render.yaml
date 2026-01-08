@@ -1,0 +1,16 @@
+services:
+  - type: cron
+    name: timetable-notifier
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m src.main
+    schedule: "*/5 2-13 * * 1-5"  # Every 5 min, 7:30 AM - 6:30 PM IST (UTC+5:30)
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: DISCORD_WEBHOOK_URL
+        sync: false
+      - key: TIMEZONE
+        value: Asia/Kolkata
