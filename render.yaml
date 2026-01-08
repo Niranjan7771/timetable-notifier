@@ -1,10 +1,9 @@
 services:
-  - type: cron
+  - type: web
     name: timetable-notifier
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python -m src.main
-    schedule: "*/5 2-13 * * 1-5"  # Every 5 min, 7:30 AM - 6:30 PM IST (UTC+5:30)
+    startCommand: python -m src.web
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         sync: false
